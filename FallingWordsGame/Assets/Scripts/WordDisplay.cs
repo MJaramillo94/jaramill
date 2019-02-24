@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class WordDisplay : MonoBehaviour {
 
@@ -20,10 +21,12 @@ public class WordDisplay : MonoBehaviour {
 		text.color = Color.red;
 	}
 
-	public void RemoveWord ()
-	{
-		Destroy(gameObject);
-	}
+    public void RemoveWord()
+    {
+       
+        Destroy(gameObject);
+        
+    }
 
     private void Update()
     {
