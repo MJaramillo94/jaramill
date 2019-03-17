@@ -6,7 +6,7 @@ using UnityStandardAssets.Characters.ThirdPerson;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerLevelTwo : MonoBehaviour
 {
 
     /*
@@ -92,7 +92,7 @@ public class PlayerController : MonoBehaviour
         lifeText.text = "Health: " + lives.ToString() + "%";
         if(lives == 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
    
@@ -102,8 +102,8 @@ public class PlayerController : MonoBehaviour
         countText.text = "Score: " + count.ToString();
         if(count >= 16)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
             winText.text = "You Win!";
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }
     }
   

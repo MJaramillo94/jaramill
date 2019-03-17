@@ -570,13 +570,29 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 64.5
       objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: da840b74656074252aa96c05f36011c4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6316893
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: da840b74656074252aa96c05f36011c4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6316893
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: da840b74656074252aa96c05f36011c4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6316893
+      objectReference: {fileID: 0}
+    - target: {fileID: 22400002, guid: da840b74656074252aa96c05f36011c4, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 146
+      objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_Name
-      value: StartGame
+      value: NextLevelButton
       objectReference: {fileID: 0}
     - target: {fileID: 22400014, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_SizeDelta.y
@@ -604,11 +620,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11400010, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_Text
-      value: Start Game
+      value: Main Menu
       objectReference: {fileID: 0}
     - target: {fileID: 11400020, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_Text
-      value: Cyber-Run
+      value: 'Congratulations!
+
+        YOu are the champion!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: da840b74656074252aa96c05f36011c4, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400020, guid: da840b74656074252aa96c05f36011c4, type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: da840b74656074252aa96c05f36011c4, type: 3}
+      propertyPath: m_Name
+      value: NextLevel
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -628,7 +658,7 @@ PrefabInstance:
       objectReference: {fileID: 494582159}
     - target: {fileID: 11400000, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartGame
+      value: StartGameBeginning
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: da840b74656074252aa96c05f36011c4, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

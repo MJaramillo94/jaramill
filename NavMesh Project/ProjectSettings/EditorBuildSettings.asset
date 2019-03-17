@@ -9,9 +9,18 @@ EditorBuildSettings:
     path: Assets/MainMenu.unity
     guid: 31776a49948228446bb8d7f28037f22d
   - enabled: 1
-    path: Assets/MainScene.unity
+    path: Assets/LevelOne.unity
     guid: fced02adde17bde47b2f0d4ed7b7918e
+  - enabled: 1
+    path: Assets/LevelTwo.unity
+    guid: 67132ffc543d17944a79ccef554d09ea
   - enabled: 1
     path: Assets/GameOver.unity
     guid: bac155a8a7a44174f8f7528d2ae54d84
+  - enabled: 1
+    path: Assets/NextLevelMenu.unity
+    guid: 58476e00e9b0c2a4da617afe851870cc
+  - enabled: 1
+    path: Assets/YouWinScreen.unity
+    guid: be41b8b9cbbf92342b80b920807dec4a
   m_configObjects: {}

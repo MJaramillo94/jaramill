@@ -16,4 +16,9 @@ public class MenuManager2 : MonoBehaviour
         Debug.Log("GAME OVER");
         Application.Quit();
     }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
 }
