@@ -1,17 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Blade : MonoBehaviour {
 
+    public int count;
+    public Text ScoreText;
+
+    public Transform blade;
+  
+
+    public TrailRenderer bladeTrail;
+
 	public GameObject bladeTrailPrefab;
 	public float minCuttingVelocity = .001f;
+
+    public static float mult;
+    public static float trailDelay;
+    public static float trailSize;
 
 	bool isCutting = false;
 
 	Vector2 previousPosition;
 
 	GameObject currentBladeTrail;
+   
 
 	Rigidbody2D rb;
 	Camera cam;
@@ -38,6 +52,13 @@ public class Blade : MonoBehaviour {
 		{
 			UpdateCut();
 		}
+
+        blade.localScale = new Vector3(1f * mult , 1f * mult, 1f  * mult);
+        bladeTrail.widthMultiplier = trailSize;
+        bladeTrail.time = trailDelay;
+       
+
+        Debug.Log(mult + "cur0rent blade multiplier");
 
 	}
 
@@ -73,5 +94,18 @@ public class Blade : MonoBehaviour {
 		Destroy(currentBladeTrail, 2f);
 		circleCollider.enabled = false;
 	}
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.tag == "Fruit")
+        {
+            count++;
+            SetScoreText();
+            
+        }
+    }
 
+    public void SetScoreText()
+    {
+        ScoreText.text = "Score : " + count;
+    }
 }

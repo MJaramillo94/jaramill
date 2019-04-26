@@ -7,8 +7,8 @@ public class FruitSpawner : MonoBehaviour {
 	public GameObject fruitPrefab;
 	public Transform[] spawnPoints;
 
-	public float minDelay = .1f;
-	public float maxDelay = 1f;
+	public static float minDelay = .1f;
+	public static float maxDelay = 1f;
 
 	// Use this for initialization
 	void Start () {
