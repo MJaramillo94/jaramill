@@ -101,6 +101,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void PlayAgain()
     {
+        Blade.count = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Blade : MonoBehaviour {
 
-    public int count;
+    public static int count;
     public Text ScoreText;
 
     public Transform blade;
@@ -36,6 +36,7 @@ public class Blade : MonoBehaviour {
 		cam = Camera.main;
 		rb = GetComponent<Rigidbody2D>();
 		circleCollider = GetComponent<CircleCollider2D>();
+        
 	}
 
 	// Update is called once per frame
@@ -106,6 +107,6 @@ public class Blade : MonoBehaviour {
 
     public void SetScoreText()
     {
-        ScoreText.text = "Score : " + count;
+        ScoreText.text = "Score : " + count.ToString();
     }
 }
